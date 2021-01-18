@@ -1,0 +1,2 @@
+1. Create Blockchain and Block (as module) classes
+2. 
