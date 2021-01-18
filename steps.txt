@@ -1,4 +1,6 @@
 1. Create Blockchain and Block (as module) classes
 2. Define data included in the block : timestamp, last_hash, hash, data
 3. Create mine_block function and genesis-first block in the chain
-
+4. Add mine_block and genesis function as a static method within the Block class
+5. Create crypto_hash function for hashing any data with hashlib and json python libraries
+6. Modify cryptohash function, so it accepts any parameters in any order
