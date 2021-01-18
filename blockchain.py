@@ -5,10 +5,12 @@ class Blockchain:
     Blockchain : public ledger of transactions, implemented as list of blocks
     '''
     def __init__(self):
-        self.chain = []
+        self.chain = [Block.genesis()]
 
     def add_block(self, data):
-        self.chain.append(Block(data))
+        last_block= self.chain[-1]
+
+        self.chain.append(Block.mine_block(self.chain[-1], data))
 
     def __repr__(self):
         return f'Blockchain: {self.chain}'
