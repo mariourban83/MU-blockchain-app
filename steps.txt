@@ -1,2 +1,4 @@
 1. Create Blockchain and Block (as module) classes
-2. 
+2. Define data included in the block : timestamp, last_hash, hash, data
+3. Create mine_block function and genesis-first block in the chain
+
