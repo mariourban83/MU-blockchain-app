@@ -4,3 +4,7 @@
 4. Add mine_block and genesis function as a static method within the Block class
 5. Create crypto_hash function for hashing any data with hashlib and json python libraries
 6. Modify cryptohash function, so it accepts any parameters in any order
+
+7. Activate python venv - virtual environment and install pytest module
+8. Create requirements.txt with list of required modules
+9. 
