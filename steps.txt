@@ -7,4 +7,5 @@
 
 7. Activate python venv - virtual environment and install pytest module
 8. Create requirements.txt with list of required modules
-9. 
+9. Refactor and reorganize code into folders and modules
+10. Write tests for Block and Blockchain classes and for crypto_hash function

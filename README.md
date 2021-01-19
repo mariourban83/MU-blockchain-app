@@ -10,3 +10,9 @@ source venv/bin/activate
 ```
 pip3 install -r requirements.txt
 ```
+
+**Run the test in the venv**
+```
+python3 -m pytest backend/tests
+```
+
