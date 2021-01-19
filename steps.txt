@@ -9,3 +9,6 @@
 8. Create requirements.txt with list of required modules
 9. Refactor and reorganize code into folders and modules
 10. Write tests for Block and Blockchain classes and for crypto_hash function
+11. Add difficulty and nonce values for proof of work algorithm
+12. Create a function for adjusting difficulty value based on the mine_rate value
+
