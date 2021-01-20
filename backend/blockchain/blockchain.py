@@ -1,3 +1,4 @@
+
 from backend.blockchain.block import Block
 
 class Blockchain:
@@ -20,6 +21,10 @@ def main():
     blockchain = Blockchain()
     blockchain.add_block('one')
     blockchain.add_block('two')
+    blockchain.add_block('three')
+    blockchain.add_block('four')
+    # blockchain.add_block('five')
+    # blockchain.add_block('six')
 
     print(blockchain)
 

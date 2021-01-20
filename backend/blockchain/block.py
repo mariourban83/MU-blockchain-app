@@ -42,15 +42,14 @@ class Block:
         is found that meets the leading zeroes proof of work requirements.
         '''
 
-        timestamp = time.time()
+        timestamp = time.time_ns()
         last_hash = last_block.hash
         difficulty = Block.adjust_difficulty(last_block, timestamp)
         nonce = 0
         hash = crypto_hash(timestamp, last_hash, data, difficulty, nonce)
-
-        while hash[0:difficulty] != '0'* difficulty:
+        while hash[0:difficulty] != '0' * difficulty:
             nonce +=1
-            timestamp = time.time()
+            timestamp = time.time_ns()
             difficulty = Block.adjust_difficulty(last_block, timestamp)
             hash = crypto_hash(timestamp, last_hash, data, difficulty, nonce)
 
@@ -72,9 +71,8 @@ class Block:
         if (new_timestamp - last_block.timestamp) < MINE_RATE:
             return last_block.difficulty + 1
 
-        if (last_block.difficulty -1) > 0:
-            return last_block.difficulty -1
-        
+        if (last_block.difficulty - 1) > 0:
+            return last_block.difficulty - 1
         return 1
 
 
@@ -83,6 +81,5 @@ def main():
     genesis_block = Block.genesis()
     block = Block.mine_block(genesis_block, 'testString')
     print(block)
-
 if __name__ == '__main__':
     main()
