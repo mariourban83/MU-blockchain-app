@@ -17,6 +17,8 @@
 16. Write tests for validating blocks method
 17. Add method to validate the whole chain
 18. Write tests for validating the chain method
-19. 
-
+19. Write function for replacing the chain if certain conditions are met
+20. Write tests for replacing the blockchain
+21. Add Flask server module for the frontend,API
+22. 
 

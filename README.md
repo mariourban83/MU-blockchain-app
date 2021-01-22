@@ -16,3 +16,7 @@ pip3 install -r requirements.txt
 python3 -m pytest backend/tests
 ```
 
+**Run Flask server, with venv activated**
+```
+python3 -m backend.app
+```
