@@ -14,5 +14,9 @@
 13. Write tests for difficulty adjustment function, to make sure its increasing or decreasing value based on the mine rate
 14. Add function for converting number to hex and and hash to binary and vice versa
 15. Create a static method for validating blocks
+16. Write tests for validating blocks method
+17. Add method to validate the whole chain
+18. Write tests for validating the chain method
+19. 
 
 
