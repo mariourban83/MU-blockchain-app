@@ -11,4 +11,8 @@
 10. Write tests for Block and Blockchain classes and for crypto_hash function
 11. Add difficulty and nonce values for proof of work algorithm
 12. Create a function for adjusting difficulty value based on the mine_rate value
+13. Write tests for difficulty adjustment function, to make sure its increasing or decreasing value based on the mine rate
+14. Add function for converting number to hex and and hash to binary and vice versa
+15. Create a static method for validating blocks
+
 
