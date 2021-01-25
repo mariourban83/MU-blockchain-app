@@ -22,5 +22,6 @@
 21. Add Flask server module for the frontend,API
 22. Add API endpoint for mining blocks with flask /blockchain/mine route"
 23. Set-up PubNub module for Subscribe, Publish instant peer messaging
-24. 
+24. Refactor PubSub test code into PubSub class
+
 
