@@ -20,5 +20,7 @@
 19. Write function for replacing the chain if certain conditions are met
 20. Write tests for replacing the blockchain
 21. Add Flask server module for the frontend,API
-22. 
+22. Add API endpoint for mining blocks with flask /blockchain/mine route"
+23. Set-up PubNub module for Subscribe, Publish instant peer messaging
+24. 
 
