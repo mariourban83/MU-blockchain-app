@@ -23,5 +23,6 @@
 22. Add API endpoint for mining blocks with flask /blockchain/mine route"
 23. Set-up PubNub module for Subscribe, Publish instant peer messaging
 24. Refactor PubSub test code into PubSub class
-
+25. Set Flask to allow multiple instances-apps running at same time on different ports
+26. 
 

@@ -20,3 +20,8 @@ python3 -m pytest backend/tests
 ```
 python3 -m backend.app
 ```
+
+**Run Flask Peer Instance**
+```
+export PEER=True && python3 -m backend.app
+```
