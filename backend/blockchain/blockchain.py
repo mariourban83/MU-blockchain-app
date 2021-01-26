@@ -11,7 +11,7 @@ class Blockchain:
     def add_block(self, data):
         last_block= self.chain[-1]
 
-        self.chain.append(Block.mine_block(self.chain[-1], data))
+        self.chain.append(Block.mine_block(last_block, data))
 
     def __repr__(self):
         return f'Blockchain: {self.chain}'
@@ -43,7 +43,7 @@ class Blockchain:
     def is_valid_chain(chain):
         '''
         Validate the incoming chain by enforcing:
-        - Chain must beggin with genesis block
+        - Chain must begin with genesis block
         - Every block must be formatted correctly
         '''
 

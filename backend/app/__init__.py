@@ -8,8 +8,7 @@ from backend.pubsub import PubSub
 
 app = Flask(__name__)
 blockchain = Blockchain()
-pubsub = PubSub()
-
+pubsub = PubSub(blockchain)
 
 @app.route("/")
 def route_default():

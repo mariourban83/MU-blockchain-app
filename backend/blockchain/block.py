@@ -73,6 +73,13 @@ class Block:
         return Block(**GENESIS_DATA)
 
     @staticmethod
+    def from_json(block_json):
+        '''
+        Deserialize block's from json back into block instance
+        '''
+        return Block(**block_json)
+
+    @staticmethod
     def adjust_difficulty(last_block, new_timestamp):
         '''
         Calculate and adjust(increase or decrease) difficulty for new mined blocks.
