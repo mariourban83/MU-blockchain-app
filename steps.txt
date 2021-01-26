@@ -24,5 +24,6 @@
 23. Set-up PubNub module for Subscribe, Publish instant peer messaging
 24. Refactor PubSub test code into PubSub class
 25. Set Flask to allow multiple instances-apps running at same time on different ports
-26. 
+26. Add broadcast_block method for broadcasting all newly mined blocks to all connected peers
+27. 
 

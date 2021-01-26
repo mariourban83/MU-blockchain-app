@@ -23,8 +23,11 @@ def route_blockchain():
 def route_blockchain_mine():
     transaction_data = "test transaction data"
     blockchain.add_block(transaction_data)
+    block =blockchain.chain[-1]
+    pubsub.broadcact_block(block)
 
-    return jsonify(blockchain.chain[-1].to_json())
+    return jsonify(block.to_json())
+
 
 # Set Flask ports to run multiple peer app instances 
 PORT = 5000
