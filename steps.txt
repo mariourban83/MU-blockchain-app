@@ -26,5 +26,6 @@
 25. Set Flask to allow multiple instances-apps running at same time on different ports
 26. Add broadcast_block method for broadcasting all newly mined blocks to all connected peers
 27. Add method to deserialize json data back to block instance for broadcasting && for comparing & potentionally replacing with valid chain and blocks
-28.   
+28. Add method to deserialize a list of serialized blocks into a Blockchain instance for initial synchronizing of peers on startup
+29. 
 
