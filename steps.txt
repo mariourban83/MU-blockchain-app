@@ -4,7 +4,6 @@
 4. Add mine_block and genesis function as a static method within the Block class
 5. Create crypto_hash function for hashing any data with hashlib and json python libraries
 6. Modify cryptohash function, so it accepts any parameters in any order
-
 7. Activate python venv - virtual environment and install pytest module
 8. Create requirements.txt with list of required modules
 9. Refactor and reorganize code into folders and modules
@@ -29,3 +28,5 @@
 28. Add method to deserialize a list of serialized blocks into a Blockchain instance for initial synchronizing of peers on startup
 29. Add cryptography module and create a wallet class with public and private keys
 30. Add sign-function to the wallet for generating signature using the local private key
+31. Add @staticmethod for verifying signatures based on the data and public key
+32. 
