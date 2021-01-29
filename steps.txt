@@ -29,4 +29,4 @@
 29. Add cryptography module and create a wallet class with public and private keys
 30. Add sign-function to the wallet for generating signature using the local private key
 31. Add @staticmethod for verifying signatures based on the data and public key
-32. 
+32. Write tests for function that verifies signatures.
