@@ -1,16 +1,23 @@
+Start Blockchain Application
 1. Create Blockchain and Block (as module) classes
 2. Define data included in the block : timestamp, last_hash, hash, data
 3. Create mine_block function and genesis-first block in the chain
 4. Add mine_block and genesis function as a static method within the Block class
 5. Create crypto_hash function for hashing any data with hashlib and json python libraries
 6. Modify cryptohash function, so it accepts any parameters in any order
+
+Initial tests for the application
 7. Activate python venv - virtual environment and install pytest module
 8. Create requirements.txt with list of required modules
 9. Refactor and reorganize code into folders and modules
 10. Write tests for Block and Blockchain classes and for crypto_hash function
+
+Proof of Work
 11. Add difficulty and nonce values for proof of work algorithm
 12. Create a function for adjusting difficulty value based on the mine_rate value
 13. Write tests for difficulty adjustment function, to make sure its increasing or decreasing value based on the mine rate
+
+Preparing the blockchain for collaboration
 14. Add function for converting number to hex and and hash to binary and vice versa
 15. Create a static method for validating blocks
 16. Write tests for validating blocks method
@@ -18,6 +25,8 @@
 18. Write tests for validating the chain method
 19. Write function for replacing the chain if certain conditions are met
 20. Write tests for replacing the blockchain
+
+Flask Server API, Pub/Sub messaging, peers
 21. Add Flask server module for the frontend,API
 22. Add API endpoint for mining blocks with flask /blockchain/mine route"
 23. Set-up PubNub module for Subscribe, Publish instant peer messaging
@@ -26,7 +35,10 @@
 26. Add broadcast_block method for broadcasting all newly mined blocks to all connected peers
 27. Add method to deserialize json data back to block instance for broadcasting && for comparing & potentionally replacing with valid chain and blocks
 28. Add method to deserialize a list of serialized blocks into a Blockchain instance for initial synchronizing of peers on startup
+
+Cryptocurrency : Wallets, Transactions, Keys
 29. Add cryptography module and create a wallet class with public and private keys
 30. Add sign-function to the wallet for generating signature using the local private key
 31. Add @staticmethod for verifying signatures based on the data and public key
 32. Write tests for function that verifies signatures.
+33. 

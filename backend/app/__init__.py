@@ -23,7 +23,7 @@ def route_blockchain_mine():
     transaction_data = "test transaction data"
     blockchain.add_block(transaction_data)
     block =blockchain.chain[-1]
-    pubsub.broadcact_block(block)
+    pubsub.broadcast_block(block)
 
     return jsonify(block.to_json())
 

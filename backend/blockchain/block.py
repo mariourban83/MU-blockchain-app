@@ -100,7 +100,7 @@ class Block:
         - correct last hash reference
         - proof of work requirement met
         - difficulty can only be adjusted by 1
-        - block hash must be cerrect combination of block fields
+        - block hash must be correct combination of block fields
         '''
         if block.last_hash != last_block.hash:
             raise Exception('The block last hash must be correct')

@@ -53,7 +53,7 @@ class PubSub():
         '''
         self.pubnub.publish().channel(channel).message(message).sync()
 
-    def broadcact_block(self, block):
+    def broadcast_block(self, block):
         '''
         Broadcast block object to all nodes
         '''

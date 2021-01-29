@@ -18,7 +18,7 @@ class Blockchain:
 
     def replace_chain(self, chain):
         '''
-        Replace the locel chain with incoming one if :
+        Replace the local chain with incoming one if :
             - The incomming chain is longer than local one
             - The incomming chain is formatted properly
         '''
