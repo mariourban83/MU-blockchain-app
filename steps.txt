@@ -41,4 +41,5 @@ Cryptocurrency : Wallets, Transactions, Keys
 30. Add sign-function to the wallet for generating signature using the local private key
 31. Add @staticmethod for verifying signatures based on the data and public key
 32. Write tests for function that verifies signatures.
-33. 
+33. Create a transaction class for cryptocurrency exchange
+34. 
