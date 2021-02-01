@@ -47,4 +47,8 @@ Cryptocurrency : Wallets, Transactions, Keys
 36. Add tests for transaction updates
 37. Add staticmethod for validating transactions
 38. Write tests for validating transaction
-39. 
+
+Transactions on the network
+39. Install Postman. Add transact endpoint(flask route) for sending post requests
+40. Add methods for serialize wallet public key
+41. 

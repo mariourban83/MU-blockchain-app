@@ -3,7 +3,7 @@ import json
 
 from cryptography.hazmat.backends import default_backend
 from cryptography.hazmat.primitives.asymmetric import ec
-from cryptography.hazmat.primitives import hashes
+from cryptography.hazmat.primitives import hashes, serialization
 from cryptography.exceptions import InvalidSignature
 
 from backend.config import STARTING_BALANCE
@@ -22,6 +22,7 @@ class Wallet:
             default_backend()
         )
         self.public_key = self.private_key.public_key()
+        self.serialize_public_key()
     
     def sign(self, data):
         '''
@@ -32,13 +33,26 @@ class Wallet:
             ec.ECDSA(hashes.SHA256())
             )
 
+    def serialize_public_key(self):
+        '''
+        Reset the public key to its serialized version
+        '''
+        self.public_key = self.public_key.public_bytes(
+            encoding=serialization.Encoding.PEM,
+            format=serialization.PublicFormat.SubjectPublicKeyInfo
+        ).decode('utf-8')
+
     @staticmethod
     def verify(public_key, data, signature):
         '''
         Verify the signature based on the original public key and data
         '''
+        deserialized_public_key = serialization.load_pem_public_key(
+            public_key.encode('utf-8'),
+            default_backend()
+        )
         try:
-            public_key.verify(
+            deserialized_public_key.verify(
                 signature,
                 json.dumps(data).encode('utf_8'),
                 ec.ECDSA(hashes.SHA256())
