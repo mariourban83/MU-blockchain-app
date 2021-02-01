@@ -42,4 +42,4 @@ Cryptocurrency : Wallets, Transactions, Keys
 31. Add @staticmethod for verifying signatures based on the data and public key
 32. Write tests for function that verifies signatures.
 33. Create a transaction class for cryptocurrency exchange
-34. 
+34. Create tests for transaction class

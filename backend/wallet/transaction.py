@@ -21,7 +21,7 @@ class Transaction:
         Structure the output data for the transaction
         '''
         if amount >sender_wallet.balance:
-            raise Exception('Amount exeeds balance')
+            raise Exception('Amount exceeds balance')
 
         output = {}
         output[recipient] = amount
