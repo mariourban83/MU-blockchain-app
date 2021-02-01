@@ -43,3 +43,5 @@ Cryptocurrency : Wallets, Transactions, Keys
 32. Write tests for function that verifies signatures.
 33. Create a transaction class for cryptocurrency exchange
 34. Create tests for transaction class
+35. Add method for updating transaction class
+36. 

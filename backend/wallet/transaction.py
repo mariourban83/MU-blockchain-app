@@ -41,7 +41,21 @@ class Transaction:
             'public_key': sender_wallet.public_key,
             'signature': sender_wallet.sign(output)
         }
+    
+    def update(self, sender_wallet, recipient, amount):
+        '''
+        Update transaction with existing or new recipient
+        '''
+        if amount > self.output[sender_wallet.address]:
+            self.output[recipient] = self.output[recipient] + amount
+        else:
+            self.output[recipient] = amount
 
+        self.output[sender_wallet.address] = \
+            self.output[sender_wallet.address] - amount
+        
+        self.input = self.create_input[sender_wallet, self.output]
+        
 def main():
     transaction = Transaction(Wallet(), 'recipient', 15)
     print(f'transaction.__dict__: {transaction.__dict__}')
