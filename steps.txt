@@ -55,4 +55,5 @@ Transactions on the network
 42. Create TransactionPool for synchronizing transactions between nodes
 43. Define method for deserializing data from json. Set pub/sub to broadcast transaction to all nodes
 44. Add if statement for checking for existing transaction in the pool, if tx not present, then its added to the pool
-45. 
+45. Add method for returning transactions from the transaction pool
+46. 
