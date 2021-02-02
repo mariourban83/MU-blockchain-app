@@ -53,4 +53,5 @@ Transactions on the network
 40. Add methods for serialize wallet public key
 41. Add method for encoding signature 
 42. Create TransactionPool for synchronizing transactions between nodes
-43. 
+43. Define method for deserialize data from json. Set pub/sub to broadcast transaction to all nodes
+44.  
