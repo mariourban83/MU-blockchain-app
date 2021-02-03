@@ -11,7 +11,7 @@ from backend.pubsub import PubSub
 
 app = Flask(__name__)
 blockchain = Blockchain()
-wallet = Wallet()
+wallet = Wallet(blockchain)
 transaction_pool = TransactionPool()
 pubsub = PubSub(blockchain, transaction_pool)
 
@@ -53,6 +53,10 @@ def route_wallet_transact():
     pubsub.broadcast_transaction(transaction)
     
     return jsonify(transaction.to_json())
+
+@app.route('/wallet/info')
+def route_wallet_info():
+    return jsonify({'address': wallet.address, 'balance': wallet.balance})
 
 # Set Flask ports to run multiple peer app instances 
 ROOT_PORT = 5000
