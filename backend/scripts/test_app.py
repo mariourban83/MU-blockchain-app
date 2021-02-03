@@ -19,10 +19,10 @@ def post_wallet_transact(recipient, amount):
 
 start_blockchain = get_blockchain()
 print(f'start_blockchain : {start_blockchain}')
-time.sleep(2)
+time.sleep(1)
 recipient = Wallet().address
 post_wallet_transact_1 = post_wallet_transact(recipient, 21)
 print(f'\n post_wallet_transact_1: {post_wallet_transact_1}')
-time.sleep(2)
+time.sleep(1)
 post_wallet_transact_2 = post_wallet_transact(recipient, 12)
 print(f'\n post_wallet_transact_2: {post_wallet_transact_1}')

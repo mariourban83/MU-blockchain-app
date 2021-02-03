@@ -57,4 +57,4 @@ Transactions on the network
 44. Add if statement for checking for existing transaction in the pool, if tx not present, then its added to the pool
 45. Add method for returning transactions (serialized to json) from the transaction pool
 46. Write script for testing POST and GET requests to the API 
-47. 
+47. Add method for deleting blockchain recorded transactions from the transaction pool
