@@ -22,13 +22,19 @@ def get_wallet_info():
 
 start_blockchain = get_blockchain()
 print(f'start_blockchain : {start_blockchain}')
+
 time.sleep(1)
 recipient = Wallet().address
 post_wallet_transact_1 = post_wallet_transact(recipient, 21)
 print(f'\n post_wallet_transact_1: {post_wallet_transact_1}')
+
 time.sleep(1)
-post_wallet_transact_2 = post_wallet_transact(recipient, 12)
-print(f'\n post_wallet_transact_2: {post_wallet_transact_1}')
+post_wallet_transact_2 = post_wallet_transact(recipient, 13)
+print(f'\n post_wallet_transact_2: {post_wallet_transact_2}')
+
+time.sleep(1)
+mined_block = get_blockchain_mine()
+print(f'\n mined_block: {mined_block} ')
 
 wallet_info = get_wallet_info()
 print(f'\n wallet_info: {wallet_info}')
