@@ -58,3 +58,11 @@ Transactions on the network
 45. Add method for returning transactions (serialized to json) from the transaction pool
 46. Write script for testing POST and GET requests to the API 
 47. Add method for deleting blockchain recorded transactions from the transaction pool
+48. Add method for calculating wallet balance
+49. Add tests for calculating balance in the wallet
+50. Add balance property and wallet info endpoint
+51. Add method for mining_reward transaction, add method and tests for validating mining rewards
+52. Add transaction chain validations method
+53. Add tests for transaction chain validations
+54. Add method for checking historic balances
+55. 
