@@ -65,4 +65,5 @@ Transactions on the network
 52. Add transaction chain validations method
 53. Add tests for transaction chain validations
 54. Add method for checking historic balances
-55. 
+55. Add react to the project, installed with npm to frontend directory
+56. 

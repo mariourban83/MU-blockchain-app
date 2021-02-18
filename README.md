@@ -25,3 +25,9 @@ python3 -m backend.app
 ```
 export PEER=True && python3 -m backend.app
 ```
+
+**Run the frontend React Application**
+From the frontend directory:
+```
+npm run start
+```
