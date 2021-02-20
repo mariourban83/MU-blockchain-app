@@ -65,7 +65,10 @@ Transactions on the network
 52. Add transaction chain validations method
 53. Add tests for transaction chain validations
 54. Add method for checking historic balances
+
+React And Frontend
 55. Add react to the project, installed with npm to frontend directory
 56. Add component for displaying Wallet info on the frontend. Add flask-cors module
 57. Add Blockchain component for displaying blockchain data on the frontend
-58. 
+58. Add Block component for displaying blocks on the frontend
+59. 
