@@ -73,6 +73,16 @@ def route_wallet_transact():
 def route_wallet_info():
     return jsonify({'address': wallet.address, 'balance': wallet.balance})
 
+@app.route('/known-addresses')
+def route_known_addresses():
+    known_addresses = set()
+
+    for block in blockchain.chain:
+        for transaction in block.data:
+            known_addresses.update(transaction['output'].keys())
+    
+    return jsonify(list(known_addresses))
+
 # Set Flask ports to run multiple peer app instances 
 ROOT_PORT = 5000
 PORT = ROOT_PORT
