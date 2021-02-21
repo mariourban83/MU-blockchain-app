@@ -72,4 +72,5 @@ React And Frontend
 57. Add Blockchain component for displaying blockchain data on the frontend
 58. Add Block component for displaying blocks on the frontend
 59. Add Transaction component with toggle function for displaying or hidding data on the frontend
-60. 
+60. Add option for seeding the peer with the data at the startup of the application
+61.  
