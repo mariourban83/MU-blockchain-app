@@ -71,4 +71,5 @@ React And Frontend
 56. Add component for displaying Wallet info on the frontend. Add flask-cors module
 57. Add Blockchain component for displaying blockchain data on the frontend
 58. Add Block component for displaying blocks on the frontend
-59. 
+59. Add Transaction component with toggle function for displaying or hidding data on the frontend
+60. 
