@@ -31,3 +31,10 @@ From the frontend directory:
 ```
 npm run start
 ```
+
+**Seed data at the startup**
+with the env activated:
+```
+export SEED_DATA=True && python3 -m backend.app
+```
+
