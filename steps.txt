@@ -75,4 +75,5 @@ React And Frontend
 60. Add option for seeding the peer with the data at the startup of the application
 61. Add endpoints for pagination of the blockchain on the frontend
 62. Add ConductTransaction component
-63. 
+63. Add react-router and history modules for frontend routing
+64. 
