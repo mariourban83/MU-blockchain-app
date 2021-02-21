@@ -74,4 +74,5 @@ React And Frontend
 59. Add Transaction component with toggle function for displaying or hidding data on the frontend
 60. Add option for seeding the peer with the data at the startup of the application
 61. Add endpoints for pagination of the blockchain on the frontend
-62. 
+62. Add ConductTransaction component
+63. 
