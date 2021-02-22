@@ -1,11 +1,4 @@
 language: python
 python:
-  - "3.7"
-  - "3.8"
-  - "3.9"
-# command to install dependencies
-install:
-  - pip3 install -r requirements.txt
-# command to run tests
-script:
-  - pytest
+- "3.7"
+install: "pip3 install -r requirements.txt"
