@@ -77,4 +77,5 @@ React And Frontend
 62. Add ConductTransaction component
 63. Add react-router and history modules for frontend routing
 64. Add transactionPool component with route to the transaction pool
-65. 
+65. Add mine transactions button to the frontend
+66. 
