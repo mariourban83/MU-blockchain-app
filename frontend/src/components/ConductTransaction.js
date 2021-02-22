@@ -44,15 +44,16 @@ function ConductTransaction() {
             <hr />
             <h3>Conduct Transaction</h3>
             <br />
-            <FormGroup>
+            <FormGroup className='ConductTransactionForm'>
                 <FormControl
                     input='text' 
                     placeholder='recipient' 
                     value={recipient}
                     onChange={updateRecipient} 
                 />
-            </FormGroup>
-            <FormGroup>
+            </FormGroup >
+            <br />
+            <FormGroup className='ConductTransactionForm'>
             <FormControl
                     input='number' 
                     placeholder='amount' 

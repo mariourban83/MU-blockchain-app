@@ -29,3 +29,13 @@ body {
   margin: auto;
   margin-top: 33px;
 }
+
+.Blockchain, .ConductTransaction {
+  width : 70%;
+  margin : auto;
+}
+
+.ConductTransactionForm {
+  width : 60%;
+  margin: auto;
+}
