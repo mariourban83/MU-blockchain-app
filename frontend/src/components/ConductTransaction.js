@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import history from '../history';
 import { FormGroup, FormControl, Button } from 'react-bootstrap';
 import { API_BASE_URL } from '../config';
 
@@ -29,7 +30,11 @@ function ConductTransaction() {
         }).then(response => response.json())
           .then(json => {
               console.log('submitTransaction json', json);
+
               alert('Success !!');
+
+              history.push('/transaction-pool');
+
           })
     }
 

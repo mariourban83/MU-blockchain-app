@@ -1,15 +1,27 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import Transaction from './Transaction';
-import { API_BASE_URL } from '../config';
+import { API_BASE_URL, SECONDS_JS } from '../config';
+
+const POOL_INTERVAL = 30 * SECONDS_JS;
 
 function TransactionPool(){
     const[transactions, setTransactions] = useState([]);
 
-    useEffect(() => {
+    const fetchTransactions = () => {
         fetch(`${API_BASE_URL}/transactions`)
             .then(response => response.json())
-            .then(json => setTransactions(json));
+            .then(json => {console.log('transactions json', json);
+            setTransactions(json);
+            });
+    }
+
+    useEffect(() => {
+        fetchTransactions();
+
+        const intervalId = setInterval(fetchTransactions, POOL_INTERVAL);
+
+        return () => clearInterval(intervalId);
     }, []);
 
     return (
