@@ -76,4 +76,5 @@ React And Frontend
 61. Add endpoints for pagination of the blockchain on the frontend
 62. Add ConductTransaction component
 63. Add react-router and history modules for frontend routing
-64. 
+64. Add transactionPool component with route to the transaction pool
+65. 
