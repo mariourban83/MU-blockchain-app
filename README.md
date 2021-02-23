@@ -1,3 +1,7 @@
+[![Build Status](https://travis-ci.com/mariourban83/blockchainApplication1.svg?token=Vzs1sAouQtMgjq4uyHeY&branch=main)](https://travis-ci.com/mariourban83/blockchainApplication1)
+
+* * * 
+
 ## Python - React - Blockchain Application
 
 
