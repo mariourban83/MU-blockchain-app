@@ -29,7 +29,7 @@ function TransactionPool(){
     const fetchMineBlock = () => {
         fetch(`${API_BASE_URL}/blockchain/mine`)
             .then( () => {
-                alert('Success!!');
+                alert('Successfully mined - Reward Added!!');
 
                 history.push('/blockchain');
             })
@@ -40,6 +40,7 @@ function TransactionPool(){
             <Link to='/'>Home</Link>
             <hr />
             <h3>Transaction Pool</h3>
+            <h4>Most recent transactions</h4>
             <div>
                 {
                     transactions.map(transaction => (

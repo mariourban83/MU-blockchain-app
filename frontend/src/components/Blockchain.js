@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from 'react-bootstrap';
 import { API_BASE_URL } from '../config';
+import logo from '../assets/logo.png';
 import Block from './Block';
 
 const PAGE_RANGE = 3;
@@ -19,9 +20,6 @@ function Blockchain() {
     useEffect(() => {
         fetchBlockchainPage({ start: 0, end: PAGE_RANGE })
 
-        fetch(`${API_BASE_URL}/blockchain`)
-            .then(response => response.json())
-            .then(json => setBlockchain(json));
         fetch(`${API_BASE_URL}/blockchain/length`)
             .then(response => response.json())
             .then(json => setBlockchainLength(json));
@@ -34,9 +32,12 @@ function Blockchain() {
 
     return (
         <div className="Blockchain">
+            <img className="logo" src={logo} alt="application-logo"/>
+            <br />
             <Link to='/'>Home</Link>
             <hr />
             <h3>Blockchain</h3>
+            <h4>Most recent blocks of transactions</h4>
             <div>
                 {
                     blockchain.map(block => <Block key={block.hash} block={block}/>)

@@ -31,7 +31,7 @@ function ConductTransaction() {
           .then(json => {
               console.log('submitTransaction json', json);
 
-              alert('Success !!');
+              alert('Transaction Successful!!');
 
               history.push('/transaction-pool');
 
