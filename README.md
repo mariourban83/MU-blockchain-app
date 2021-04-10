@@ -2,15 +2,21 @@
 
 * * * 
 
-## Python - React - Blockchain Application
+## Python - React - Blockchain Application   
+#### Local Deployment   
+Python => 3.7 required 
 
+**Create virtual env in root directory with**
+```
+python3 -m venv venv
+```
 
 **Activate virtual environment**
 ```
 source venv/bin/activate
 ```
 
-**Install required packages with :**
+**From the app root directory, install python required packages with :**
 ```
 pip3 install -r requirements.txt
 ```
@@ -20,9 +26,9 @@ pip3 install -r requirements.txt
 python3 -m pytest backend/tests
 ```
 
-**Run Flask server, with venv activated**
+**Seed data at the startup and start Flask server with the env activated:**
 ```
-python3 -m backend.app
+export SEED_DATA=True && python3 -m backend.app
 ```
 
 **Run Flask Peer Instance**
@@ -30,15 +36,9 @@ python3 -m backend.app
 export PEER=True && python3 -m backend.app
 ```
 
-**Run the frontend React Application**
-From the frontend directory:
+**Install dependencies for react and run the frontend application**
+cd into /frontend directory:
 ```
+npm install
 npm run start
 ```
-
-**Seed data at the startup**
-with the env activated:
-```
-export SEED_DATA=True && python3 -m backend.app
-```
-
