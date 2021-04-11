@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.com/mariourban83/blockchainApplication1.svg?token=Vzs1sAouQtMgjq4uyHeY&branch=main)](https://travis-ci.com/mariourban83/blockchainApplication1)
+[![Build Status](https://travis-ci.com/mariourban83/MU-blockchain-app.svg?branch=main)](https://travis-ci.com/mariourban83/MU-blockchain-app)
 
 * * * 
 
